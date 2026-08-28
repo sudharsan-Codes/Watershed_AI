@@ -3,6 +3,7 @@ import { useMemo, useState } from "react";
 import { useNavigate, useOutletContext } from "react-router-dom";
 import { EvidenceCard } from "../components/evidence/EvidenceCard";
 import { EvidenceDrawer } from "../components/evidence/EvidenceDrawer";
+import { EvidenceUpload } from "../components/evidence/EvidenceUpload";
 import { fieldEvidence } from "../data/evidence";
 import { getInterventionById } from "../data/interventions";
 import type { Watershed } from "../types";
@@ -73,12 +74,21 @@ export default function FieldEvidence() {
             <option value="Requires Verification">Requires Verification</option>
           </select>
         </div>
+
+        <div className="border-t border-gray-100 pt-3 mt-3">
+          <EvidenceUpload />
+        </div>
       </div>
 
       <div className="flex-1 min-w-0 overflow-y-auto p-4">
         <div className="flex items-center justify-between mb-3">
           <h2 className="text-sm font-semibold text-gray-800">Field Evidence Repository</h2>
-          <span className="text-xs text-gray-400">Showing {items.length} results</span>
+          <div className="flex items-center gap-3">
+            <span className="text-[10px] px-2 py-0.5 bg-gray-100 text-gray-500 rounded-full font-medium uppercase tracking-wide">
+              Prototype Demonstration Data
+            </span>
+            <span className="text-xs text-gray-400">Showing {items.length} results</span>
+          </div>
         </div>
 
         {items.length === 0 ? (

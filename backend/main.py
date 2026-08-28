@@ -2,9 +2,9 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 try:
-    from routers import health, interventions, watersheds
+    from routers import evidence, health, interventions, watersheds
 except ImportError:
-    from .routers import health, interventions, watersheds
+    from .routers import evidence, health, interventions, watersheds
 
 app = FastAPI(
     title="WATERSIGHT AI API",
@@ -31,6 +31,7 @@ app.add_middleware(
 app.include_router(health.router)
 app.include_router(watersheds.router)
 app.include_router(interventions.router)
+app.include_router(evidence.router)
 
 
 if __name__ == "__main__":

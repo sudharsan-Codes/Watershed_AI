@@ -22,6 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+# Uploaded evidence (runtime data, not source)
+backend/data/uploads/
+
 # Python
 __pycache__/
 *.py[cod]
