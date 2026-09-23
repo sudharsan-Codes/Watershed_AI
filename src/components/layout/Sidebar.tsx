@@ -67,14 +67,14 @@ const sections: NavSection[] = [
 
 export function Sidebar() {
   return (
-    <aside className="w-56 shrink-0 h-full bg-white border-r border-gray-200 flex flex-col">
-      <div className="p-3 border-b border-gray-100">
-        <div className="flex items-center gap-2 bg-gray-50 border border-gray-200 rounded-md px-2.5 py-1.5">
-          <Search size={14} className="text-gray-400" />
+    <aside className="w-56 shrink-0 h-full bg-gis-surface border-r border-gis-border flex flex-col z-10 select-none">
+      <div className="p-3 border-b border-gis-border">
+        <div className="flex items-center gap-2 bg-gis-card border border-gis-border rounded-md px-2.5 py-1.5 focus-within:border-brand-500 transition-colors">
+          <Search size={14} className="text-gis-text-dim shrink-0" />
           <input
             type="text"
             placeholder="Search watersheds..."
-            className="bg-transparent text-xs text-gray-700 placeholder:text-gray-400 outline-none w-full"
+            className="bg-transparent text-xs text-gis-text placeholder:text-gis-text-dim outline-none w-full"
           />
         </div>
       </div>
@@ -82,7 +82,7 @@ export function Sidebar() {
       <nav className="flex-1 overflow-y-auto py-2">
         {sections.map((section) => (
           <div key={section.title} className="px-3 mb-3">
-            <div className="text-[10px] font-semibold uppercase tracking-wider text-gray-400 px-2 mb-1">
+            <div className="text-[10px] font-bold uppercase tracking-wider text-gis-text-dim px-2.5 mb-1">
               {section.title}
             </div>
             <ul className="space-y-0.5">
@@ -93,10 +93,10 @@ export function Sidebar() {
                     end={item.to === "/"}
                     className={({ isActive }) =>
                       [
-                        "flex items-center gap-2.5 px-2.5 py-1.5 rounded-md text-[13px] transition-colors border-l-2",
+                        "flex items-center gap-2.5 px-2.5 py-1.5 rounded-md text-[13px] transition-all border-l-2",
                         isActive
-                          ? "bg-brand-50 text-brand-700 border-brand-600 font-medium"
-                          : "text-gray-600 border-transparent hover:bg-gray-50 hover:text-gray-900",
+                          ? "bg-brand-600/15 text-brand-400 border-brand-500 font-semibold"
+                          : "text-gis-text-muted border-transparent hover:bg-gis-card hover:text-gis-text",
                       ].join(" ")
                     }
                   >
@@ -105,10 +105,10 @@ export function Sidebar() {
                     {item.badge && (
                       <span
                         className={[
-                          "text-[10px] font-semibold rounded-full px-1.5 py-0.5 leading-none",
+                          "text-[10px] font-bold rounded-full px-1.5 py-0.5 leading-none",
                           item.badge.tone === "alert"
-                            ? "bg-red-100 text-red-600"
-                            : "bg-gray-100 text-gray-600",
+                            ? "bg-rose-500/20 text-rose-400 border border-rose-500/30"
+                            : "bg-gis-card text-gis-text-muted border border-gis-border",
                         ].join(" ")}
                       >
                         {item.badge.text}
@@ -122,10 +122,10 @@ export function Sidebar() {
         ))}
       </nav>
 
-      <div className="p-3 border-t border-gray-100 flex items-center justify-between text-[11px] text-gray-500">
-        <span>System Status</span>
-        <span className="flex items-center gap-1.5 text-emerald-600 font-medium">
-          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
+      <div className="p-3 border-t border-gis-border flex items-center justify-between text-[11px] text-gis-text-muted bg-gis-surface/80">
+        <span className="font-medium">System Status</span>
+        <span className="flex items-center gap-1.5 text-emerald-400 font-semibold">
+          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
           Online
         </span>
       </div>

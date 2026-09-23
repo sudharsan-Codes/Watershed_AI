@@ -1,9 +1,18 @@
 @import "tailwindcss";
 
 @theme {
-  --color-navy-950: #0b1622;
-  --color-navy-900: #0f1e2e;
-  --color-navy-800: #14293c;
+  --color-gis-bg: #0b1220;
+  --color-gis-surface: #111827;
+  --color-gis-card: #172033;
+  --color-gis-border: #263244;
+  --color-gis-border-light: #334155;
+  --color-gis-text: #f8fafc;
+  --color-gis-text-muted: #94a3b8;
+  --color-gis-text-dim: #64748b;
+
+  --color-navy-950: #0b1220;
+  --color-navy-900: #111827;
+  --color-navy-800: #172033;
 
   --color-brand-50: #eff6ff;
   --color-brand-100: #dbeafe;
@@ -11,17 +20,53 @@
   --color-brand-600: #2563eb;
   --color-brand-700: #1d4ed8;
 
-  --color-slate-25: #f8fafc;
+  --color-slate-25: #0b1220;
 
   --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
 }
 
 body {
   font-family: var(--font-sans);
+  background-color: var(--color-gis-bg);
+  color: var(--color-gis-text);
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Leaflet default marker fix for Vite bundling */
+/* Custom scrollbars for enterprise GIS look */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b1220;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #263244;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* Leaflet default marker fix and popup styling for dark theme */
 .leaflet-container {
   font-family: var(--font-sans);
+  background-color: #0b1220;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #172033 !important;
+  color: #f8fafc !important;
+  border: 1px solid #263244 !important;
+  border-radius: 8px !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5) !important;
+}
+
+.leaflet-popup-tip {
+  background: #172033 !important;
+  border: 1px solid #263244 !important;
 }

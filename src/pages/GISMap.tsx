@@ -9,11 +9,15 @@ import { MapLegend } from "../components/map/MapLegend";
 import { MapStatusBar } from "../components/map/MapStatusBar";
 import { makeMarkerIcon } from "../components/map/markerIcons";
 import { NdviPanel } from "../components/map/NdviPanel";
-import { getInterventions, getFieldEvidenceByWatershed } from "../services/gisService";
+import {
+  getInterventions,
+  getFieldEvidenceByWatershed,
+  fetchUploadedEvidence,
+} from "../services/gisService";
 import { satelliteAnalysisByWatershed } from "../data/analysis";
 import { useMapLayers } from "../hooks/useMapLayers";
 import { useWatershedGeo } from "../hooks/useWatershedGeo";
-import type { Watershed } from "../types";
+import type { UploadedEvidence, Watershed } from "../types";
 import "leaflet/dist/leaflet.css";
 
 function FocusOnSelection({
@@ -106,11 +110,30 @@ export default function GISMap() {
   const { geo, loading: geoLoading, error: geoError } = useWatershedGeo(watershed);
   const { visibility, toggle } = useMapLayers({ searchParams, setSearchParams });
   const [layerPanelOpen, setLayerPanelOpen] = useState(false);
+  const [uploadedEvidence, setUploadedEvidence] = useState<UploadedEvidence[]>([]);
 
   // Intervention markers still need refs for FocusOnSelection fly-to
   const wsInterventions = getInterventions(watershed.id);
   const wsEvidence = getFieldEvidenceByWatershed(watershed.id);
   const markerRefs = useRef<Record<string, LeafletMarker | null>>({});
+
+  useEffect(() => {
+    let active = true;
+    fetchUploadedEvidence(watershed.id)
+      .then((data) => {
+        if (active) setUploadedEvidence(data);
+      })
+      .catch((err) => {
+        console.warn("[GISMap] Failed to load uploaded evidence:", err);
+      });
+    return () => {
+      active = false;
+    };
+  }, [watershed.id]);
+
+  const validUploadedEvidence = uploadedEvidence.filter(
+    (ev) => ev.gpsAvailable && ev.latitude !== null && ev.longitude !== null,
+  );
 
   // Fallback bounds in case no geo layers are available
   const bounds = geo?.bounds ?? ([
@@ -195,7 +218,7 @@ export default function GISMap() {
             />
           ))}
 
-        {/* Field evidence markers — rendered first so intervention markers sit above */}
+        {/* Prototype Demonstration Evidence markers */}
         {visibility.evidence &&
           wsEvidence.map((ev) => (
             <Marker
@@ -204,7 +227,10 @@ export default function GISMap() {
               icon={makeMarkerIcon("evidence")}
             >
               <Popup>
-                <div className="text-xs">
+                <div className="text-xs space-y-1">
+                  <div className="text-[10px] uppercase font-semibold tracking-wider text-gray-500 bg-gray-100 px-1.5 py-0.5 rounded inline-block mb-1">
+                    Prototype Demonstration Data
+                  </div>
                   <div className="font-semibold">{ev.verificationStatus}</div>
                   <div className="text-gray-500">
                     {new Date(ev.captureDate).toLocaleDateString("en-IN", {
@@ -222,6 +248,117 @@ export default function GISMap() {
               </Popup>
             </Marker>
           ))}
+
+        {/* Uploaded Evidence markers (distinct purple marker) */}
+        {visibility.uploadedEvidence &&
+          validUploadedEvidence.map((ev) => {
+            const vStatus = ev.verification?.status ?? "requires_verification";
+            return (
+              <Marker
+                key={ev.id}
+                position={[ev.latitude!, ev.longitude!]}
+                icon={makeMarkerIcon("uploadedEvidence")}
+              >
+                <Popup>
+                  <div className="text-xs space-y-2 min-w-[210px] max-w-[260px]">
+                    <div className="flex items-center justify-between border-b border-gray-100 pb-1">
+                      <span className="text-[10px] uppercase font-bold tracking-wider text-purple-700 bg-purple-100 px-1.5 py-0.5 rounded">
+                        Uploaded Evidence
+                      </span>
+                      {vStatus === "verified" && (
+                        <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-emerald-100 text-emerald-700">
+                          ✓ VERIFIED
+                        </span>
+                      )}
+                      {vStatus === "rejected" && (
+                        <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-rose-100 text-rose-700">
+                          ✕ REJECTED
+                        </span>
+                      )}
+                      {vStatus === "requires_verification" && (
+                        <span className="text-[10px] font-bold px-1.5 py-0.5 rounded bg-amber-100 text-amber-700">
+                          ⚠ REQUIRES VERIFICATION
+                        </span>
+                      )}
+                    </div>
+
+                    <div className="relative rounded overflow-hidden bg-gray-100 h-24 border border-gray-200">
+                      <img
+                        src={`http://localhost:8000/uploads/${ev.storedFilename}`}
+                        alt={ev.filename}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          (e.target as HTMLImageElement).style.display = "none";
+                        }}
+                      />
+                    </div>
+
+                    <div className="font-semibold text-gray-800 text-[11px] truncate" title={ev.filename}>
+                      {ev.filename}
+                    </div>
+
+                    <div className="space-y-1 text-[11px] text-gray-600 bg-gray-50 p-1.5 rounded">
+                      <div className="flex justify-between">
+                        <span className="text-gray-400">GPS:</span>
+                        <span className="font-mono text-gray-700">
+                          {ev.latitude!.toFixed(4)}° N, {ev.longitude!.toFixed(4)}° E
+                        </span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-gray-400">Timestamp:</span>
+                        <span className="text-gray-700">
+                          {ev.captureTimestamp
+                            ? new Date(ev.captureTimestamp).toLocaleString("en-IN", {
+                                day: "2-digit",
+                                month: "short",
+                                year: "numeric",
+                                hour: "2-digit",
+                                minute: "2-digit",
+                              })
+                            : "Not available"}
+                        </span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-gray-400">Watershed:</span>
+                        <span className="text-gray-700 font-medium">
+                          {ev.watershedMatch.matched
+                            ? ev.watershedMatch.watershedName
+                            : "Not matched"}
+                        </span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-gray-400">Intervention:</span>
+                        <span className="text-gray-700 font-medium">
+                          {ev.nearestIntervention.matched
+                            ? `${ev.nearestIntervention.code} (${ev.nearestIntervention.type})`
+                            : "Not matched"}
+                        </span>
+                      </div>
+                      <div className="flex justify-between">
+                        <span className="text-gray-400">Distance:</span>
+                        <span className="text-gray-700">
+                          {ev.nearestIntervention.distanceMeters != null
+                            ? `${Math.round(ev.nearestIntervention.distanceMeters)} m`
+                            : "N/A"}
+                        </span>
+                      </div>
+                    </div>
+
+                    {ev.verification?.reviewNote && (
+                      <div className="text-[10px] text-gray-600 bg-gray-50 p-1.5 rounded border border-gray-100 italic">
+                        "{ev.verification.reviewNote}"
+                      </div>
+                    )}
+
+                    <div className="text-[9px] text-gray-400 text-right">
+                      Source: Uploaded Evidence
+                    </div>
+                  </div>
+                </Popup>
+              </Marker>
+            );
+          })}
+
 
         {/* Intervention markers — rendered after evidence so selected red marker sits on top */}
         {visibility.interventions &&
@@ -262,9 +399,9 @@ export default function GISMap() {
           ) : (
             <button
               onClick={() => setLayerPanelOpen(true)}
-              className="leaflet-control flex items-center gap-1.5 bg-white rounded-md shadow-sm border border-gray-200 px-2.5 py-1.5 text-xs font-medium text-gray-600 hover:bg-gray-50"
+              className="leaflet-control flex items-center gap-1.5 bg-gis-surface/95 backdrop-blur-md rounded-lg shadow-xl border border-gis-border px-3 py-1.5 text-xs font-semibold text-gis-text hover:bg-gis-card transition-colors"
             >
-              <Layers size={13} />
+              <Layers size={13} className="text-brand-400" />
               Layers
             </button>
           )}

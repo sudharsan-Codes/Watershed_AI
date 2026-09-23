@@ -8,10 +8,13 @@ function pinSvg(color: string, ringColor: string): string {
     </svg>`;
 }
 
-export function makeMarkerIcon(kind: "intervention" | "evidence" | "selected" = "intervention") {
+export function makeMarkerIcon(
+  kind: "intervention" | "evidence" | "uploadedEvidence" | "selected" = "intervention",
+) {
   const colorMap = {
     intervention: { color: "#2563eb", ring: "#ffffff" },
     evidence: { color: "#16a34a", ring: "#ffffff" },
+    uploadedEvidence: { color: "#7c3aed", ring: "#ede9fe" },
     selected: { color: "#dc2626", ring: "#fecaca" },
   } as const;
   const { color, ring } = colorMap[kind];

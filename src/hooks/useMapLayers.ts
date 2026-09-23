@@ -5,6 +5,7 @@ export type MapLayerId =
   | "boundary"
   | "interventions"
   | "evidence"
+  | "uploadedEvidence"
   | "priorityZones";
 
 /** All valid layer IDs for parsing/validation. */
@@ -12,6 +13,7 @@ const ALL_LAYER_IDS: readonly MapLayerId[] = [
   "boundary",
   "interventions",
   "evidence",
+  "uploadedEvidence",
   "priorityZones",
 ];
 
@@ -22,6 +24,7 @@ const DEFAULT_VISIBILITY: LayerVisibility = {
   boundary: true,
   interventions: true,
   evidence: true,
+  uploadedEvidence: true,
   priorityZones: false, // off by default — opt-in to keep map clean
 };
 

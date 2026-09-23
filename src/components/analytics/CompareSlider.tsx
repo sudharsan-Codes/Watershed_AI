@@ -14,7 +14,7 @@ export function CompareSlider({
   const [position, setPosition] = useState(50);
 
   return (
-    <div className="relative w-full h-full overflow-hidden rounded-lg bg-gray-200 select-none">
+    <div className="relative w-full h-full overflow-hidden rounded-lg bg-gis-card border border-gis-border select-none">
       <img src={afterSrc} alt={afterLabel} className="absolute inset-0 w-full h-full object-cover" />
       <div className="absolute inset-0 overflow-hidden" style={{ width: `${position}%` }}>
         <img src={beforeSrc} alt={beforeLabel} className="h-full object-cover" style={{ width: "100vw", maxWidth: "none" }} />

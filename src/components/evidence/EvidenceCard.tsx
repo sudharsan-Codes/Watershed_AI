@@ -23,27 +23,27 @@ export function EvidenceCard({
     <button
       onClick={onSelect}
       className={[
-        "text-left bg-white rounded-lg border overflow-hidden transition-shadow hover:shadow-md",
-        selected ? "border-brand-500 ring-1 ring-brand-500" : "border-gray-200",
+        "text-left bg-gis-card rounded-lg border overflow-hidden transition-all hover:border-brand-500 shadow-sm",
+        selected ? "border-brand-500 ring-1 ring-brand-500" : "border-gis-border",
       ].join(" ")}
     >
-      <div className="relative h-28 bg-gray-100">
+      <div className="relative h-28 bg-gis-surface">
         <img src={evidence.imageUrl} alt={intervention?.code ?? "Field evidence"} className="w-full h-full object-cover" />
-        <span className="absolute top-1.5 right-1.5 text-[10px] bg-black/60 text-white px-1.5 py-0.5 rounded">
+        <span className="absolute top-1.5 right-1.5 text-[10px] bg-black/70 backdrop-blur-xs text-white px-1.5 py-0.5 rounded">
           {dateLabel}
         </span>
       </div>
       <div className="p-2.5">
         <div className="flex items-center justify-between gap-2">
-          <span className="text-[13px] font-semibold text-gray-800 truncate">
+          <span className="text-[13px] font-semibold text-gis-text truncate">
             {intervention?.code ?? "Unlinked"}
           </span>
           <Badge tone={evidence.verificationStatus === "Field Verified" ? "success" : "warning"}>
             {evidence.verificationStatus}
           </Badge>
         </div>
-        <div className="flex items-center gap-1 text-[11px] text-gray-400 mt-1">
-          <MapPin size={11} />
+        <div className="flex items-center gap-1 text-[11px] text-gis-text-dim mt-1">
+          <MapPin size={11} className="text-gis-text-dim" />
           {evidence.latitude.toFixed(4)}° N, {evidence.longitude.toFixed(4)}° E
         </div>
       </div>

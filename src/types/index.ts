@@ -93,3 +93,99 @@ export interface DashboardSummary {
   dataUpdatedAt: string;
   isDemoData: true;
 }
+
+export interface UploadedEvidenceWatershedMatch {
+  matched: boolean;
+  watershedId: string | null;
+  watershedName: string | null;
+  distanceMeters: number | null;
+}
+
+export interface UploadedEvidenceInterventionMatch {
+  matched: boolean;
+  interventionId: string | null;
+  code: string | null;
+  type: string | null;
+  distanceMeters: number | null;
+}
+
+export interface UploadedEvidenceValidation {
+  valid: boolean;
+  errors: string[];
+  warnings?: string[];
+}
+
+export type EvidenceVerificationStatus = "requires_verification" | "verified" | "rejected";
+
+export interface UploadedEvidenceVerification {
+  status: EvidenceVerificationStatus;
+  verifiedBy: string | null;
+  verifiedAt: string | null;
+  reviewNote: string | null;
+}
+
+export type GPSSource = "EXIF" | "VISUAL_OVERLAY" | "NONE";
+export type GPSConfidence = "HIGH" | "MEDIUM" | "LOW" | "NONE";
+export type GPSStatus = "DETECTED" | "MISSING" | "NEEDS_REVIEW" | "INVALID" | "CONFLICT" | "VISUAL_GPS_UNAVAILABLE";
+export type TimestampStatus = "DETECTED" | "MISSING" | "NEEDS_REVIEW" | "UNAVAILABLE";
+
+export interface ExtractedGPS {
+  latitude: number | null;
+  longitude: number | null;
+  source: GPSSource;
+  confidence: GPSConfidence;
+  rawText?: string;
+  status?: GPSStatus;
+  conflictGps?: {
+    latitude: number;
+    longitude: number;
+    source: GPSSource;
+    rawText?: string;
+  };
+}
+
+export interface ExtractedTimestamp {
+  value: string | null;
+  source: GPSSource;
+  confidence: GPSConfidence;
+  rawText?: string;
+  status?: TimestampStatus;
+}
+
+export interface UploadedEvidence {
+  id: string;
+  filename: string;
+  storedFilename: string;
+  gpsAvailable: boolean;
+  latitude: number | null;
+  longitude: number | null;
+  gpsSource?: GPSSource;
+  gpsConfidence?: GPSConfidence;
+  gpsStatus?: GPSStatus;
+  gpsRawText?: string;
+  conflictGps?: {
+    latitude: number;
+    longitude: number;
+    source: GPSSource;
+    rawText?: string;
+  };
+  timestampAvailable: boolean;
+  captureTimestamp: string | null;
+  timestampSource?: GPSSource;
+  timestampConfidence?: GPSConfidence;
+  timestampStatus?: TimestampStatus;
+  timestampRawText?: string;
+  imageDimensions?: {
+    width: number | null;
+    height: number | null;
+  };
+  watershedMatch: UploadedEvidenceWatershedMatch;
+  nearestIntervention: UploadedEvidenceInterventionMatch;
+  validation: UploadedEvidenceValidation;
+  verification: UploadedEvidenceVerification;
+  source: "uploaded";
+  createdAt: string;
+}
+
+
+

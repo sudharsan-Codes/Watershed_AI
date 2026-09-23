@@ -5,6 +5,7 @@ import type {
   Intervention,
   PriorityArea,
   SatelliteAnalysis,
+  UploadedEvidence,
   Watershed,
 } from "../types";
 import type { Feature, Polygon } from "geojson";
@@ -124,3 +125,69 @@ export function getPriorityAreas(watershedId: string): PriorityArea[] {
 export function getDashboardSummary(): DashboardSummary {
   return dashboardSummary;
 }
+
+// -- Uploaded Field Evidence (FastAPI) --------------------------------------
+
+/**
+ * Fetch persisted uploaded field evidence records from the FastAPI backend.
+ *
+ * Optionally filters by watershedId.
+ */
+export async function fetchUploadedEvidence(
+  watershedId?: string,
+): Promise<UploadedEvidence[]> {
+  const query = watershedId ? `?watershedId=${encodeURIComponent(watershedId)}` : "";
+  const url = `${API_BASE}/api/evidence${query}`;
+  const res = await fetch(url);
+  if (!res.ok) {
+    throw new Error(
+      `Failed to fetch uploaded evidence: ${res.status} ${res.statusText} (${url})`,
+    );
+  }
+  return res.json() as Promise<UploadedEvidence[]>;
+}
+
+/**
+ * Fetch a single uploaded field evidence record by ID from the FastAPI backend.
+ */
+export async function fetchUploadedEvidenceById(
+  evidenceId: string,
+): Promise<UploadedEvidence> {
+  const url = `${API_BASE}/api/evidence/${encodeURIComponent(evidenceId)}`;
+  const res = await fetch(url);
+  if (!res.ok) {
+    throw new Error(
+      `Failed to fetch evidence ${evidenceId}: ${res.status} ${res.statusText} (${url})`,
+    );
+  }
+  return res.json() as Promise<UploadedEvidence>;
+}
+
+/**
+ * Update verification status and review note for an uploaded evidence record.
+ */
+export async function updateEvidenceVerification(
+  evidenceId: string,
+  data: {
+    status: "requires_verification" | "verified" | "rejected";
+    reviewNote?: string;
+  },
+): Promise<UploadedEvidence> {
+  const url = `${API_BASE}/api/evidence/${encodeURIComponent(evidenceId)}/verification`;
+  const res = await fetch(url, {
+    method: "PATCH",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(data),
+  });
+  if (!res.ok) {
+    const detail = await res.json().catch(() => ({}));
+    throw new Error(
+      detail.detail || `Failed to update verification: ${res.status} ${res.statusText}`,
+    );
+  }
+  return res.json() as Promise<UploadedEvidence>;
+}
+
+

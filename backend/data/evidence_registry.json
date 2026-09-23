@@ -1,0 +1,2972 @@
+[
+  {
+    "id": "ev-upload-d43dbd8a",
+    "filename": "ChatGPT Image Aug 29, 2026, 05_54_29 PM.png",
+    "storedFilename": "940fa7f80a1a_ChatGPT_Image_Aug_29_2026_05_54_29_PM.png",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "gpsSource": "NONE",
+    "gpsConfidence": "NONE",
+    "gpsStatus": "MISSING",
+    "gpsRawText": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "timestampSource": "NONE",
+    "timestampConfidence": "NONE",
+    "imageDimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates detected from EXIF metadata or visible image text."
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-29T12:25:10.923566+00:00"
+  },
+  {
+    "id": "ev-upload-c416aa55",
+    "filename": "WhatsApp Image 2026-08-29 at 5.47.28 PM.jpeg",
+    "storedFilename": "d95f5f8c7cf5_WhatsApp_Image_2026-08-29_at_5.47.28_PM.jpeg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "gpsSource": "NONE",
+    "gpsConfidence": "NONE",
+    "gpsStatus": "MISSING",
+    "gpsRawText": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "timestampSource": "NONE",
+    "timestampConfidence": "NONE",
+    "imageDimensions": {
+      "width": 1600,
+      "height": 1000
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates detected from EXIF metadata or visible image text."
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-29T12:19:40.899130+00:00"
+  },
+  {
+    "id": "ev-upload-c4a5fbf4",
+    "filename": "newimg.jpeg",
+    "storedFilename": "a01833c97684_newimg.jpeg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "gpsSource": "NONE",
+    "gpsConfidence": "NONE",
+    "gpsStatus": "MISSING",
+    "gpsRawText": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "timestampSource": "NONE",
+    "timestampConfidence": "NONE",
+    "imageDimensions": {
+      "width": 1200,
+      "height": 800
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates detected from EXIF metadata or visible image text."
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-29T12:14:56.345870+00:00"
+  },
+  {
+    "id": "ev-upload-8c8ee414",
+    "filename": "new.jpeg",
+    "storedFilename": "6e41e58ca6fc_new.jpeg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "gpsSource": "NONE",
+    "gpsConfidence": "NONE",
+    "gpsStatus": "MISSING",
+    "gpsRawText": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "timestampSource": "NONE",
+    "timestampConfidence": "NONE",
+    "imageDimensions": {
+      "width": 960,
+      "height": 1280
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates detected from EXIF metadata or visible image text."
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-29T12:07:57.814931+00:00"
+  },
+  {
+    "id": "ev-upload-6b6d5224",
+    "filename": "new.jpeg",
+    "storedFilename": "e45367e46f8e_new.jpeg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "gpsSource": "NONE",
+    "gpsConfidence": "NONE",
+    "gpsStatus": "MISSING",
+    "gpsRawText": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "timestampSource": "NONE",
+    "timestampConfidence": "NONE",
+    "imageDimensions": {
+      "width": 960,
+      "height": 1280
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates detected from EXIF metadata or visible image text."
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedBy": "demo-reviewer",
+      "verifiedAt": "2026-08-29T11:08:26.673954+00:00",
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-29T10:25:26.593672+00:00"
+  },
+  {
+    "id": "ev-upload-532bc9d2",
+    "filename": "new.jpeg",
+    "storedFilename": "2f74d128094a_new.jpeg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "gpsSource": "NONE",
+    "gpsConfidence": "NONE",
+    "gpsStatus": "MISSING",
+    "gpsRawText": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "timestampSource": "NONE",
+    "timestampConfidence": "NONE",
+    "imageDimensions": {
+      "width": 960,
+      "height": 1280
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates detected from EXIF metadata or visible image text."
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-29T10:24:25.440166+00:00"
+  },
+  {
+    "id": "ev-upload-8f87621c",
+    "filename": "WhatsApp Image 2026-08-29 at 10.38.01 AM.jpeg",
+    "storedFilename": "be0d6fd9ba6a_WhatsApp_Image_2026-08-29_at_10.38.01_AM.jpeg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "gpsSource": "NONE",
+    "gpsConfidence": "NONE",
+    "gpsStatus": "MISSING",
+    "gpsRawText": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "timestampSource": "NONE",
+    "timestampConfidence": "NONE",
+    "imageDimensions": {
+      "width": 960,
+      "height": 1280
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates detected from EXIF metadata or visible image text."
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-29T10:18:15.377516+00:00"
+  },
+  {
+    "id": "ev-upload-d9145a29",
+    "filename": "WhatsApp Image 2026-08-29 at 10.38.01 AM.jpeg",
+    "storedFilename": "c42d640ba0fa_WhatsApp_Image_2026-08-29_at_10.38.01_AM.jpeg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "gpsSource": "NONE",
+    "gpsConfidence": "NONE",
+    "gpsStatus": "MISSING",
+    "gpsRawText": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "timestampSource": "NONE",
+    "timestampConfidence": "NONE",
+    "imageDimensions": {
+      "width": 960,
+      "height": 1280
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates detected from EXIF metadata or visible image text."
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-29T10:17:23.159036+00:00"
+  },
+  {
+    "id": "ev-upload-b8f93673",
+    "filename": "WhatsApp Image 2026-08-29 at 10.38.01 AM.jpeg",
+    "storedFilename": "30f9b74bb832_WhatsApp_Image_2026-08-29_at_10.38.01_AM.jpeg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "gpsSource": "NONE",
+    "gpsConfidence": "NONE",
+    "gpsStatus": "MISSING",
+    "gpsRawText": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "timestampSource": "NONE",
+    "timestampConfidence": "NONE",
+    "imageDimensions": {
+      "width": 960,
+      "height": 1280
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates detected from EXIF metadata or visible image text."
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-29T10:12:10.345500+00:00"
+  },
+  {
+    "id": "ev-upload-34edcf32",
+    "filename": "WhatsApp Image 2026-08-29 at 10.38.01 AM.jpeg",
+    "storedFilename": "ba4f39eb2d89_WhatsApp_Image_2026-08-29_at_10.38.01_AM.jpeg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "gpsSource": "NONE",
+    "gpsConfidence": "NONE",
+    "gpsStatus": "MISSING",
+    "gpsRawText": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "timestampSource": "NONE",
+    "timestampConfidence": "NONE",
+    "imageDimensions": {
+      "width": 960,
+      "height": 1280
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates detected from EXIF metadata or visible image text."
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-29T10:09:54.894792+00:00"
+  },
+  {
+    "id": "ev-upload-39e5e24b",
+    "filename": "pexels-piat-13448547.jpg",
+    "storedFilename": "77a98493da66_pexels-piat-13448547.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "gpsSource": "NONE",
+    "gpsConfidence": "NONE",
+    "gpsStatus": "MISSING",
+    "gpsRawText": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "timestampSource": "NONE",
+    "timestampConfidence": "NONE",
+    "imageDimensions": {
+      "width": 4000,
+      "height": 6000
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates detected from EXIF metadata or visible image text."
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-29T08:43:58.267769+00:00"
+  },
+  {
+    "id": "ev-upload-2eeddc7d",
+    "filename": "WhatsApp Image 2026-08-29 at 10.38.01 AM.jpeg",
+    "storedFilename": "7107e5b5a174_WhatsApp_Image_2026-08-29_at_10.38.01_AM.jpeg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "gpsSource": "NONE",
+    "gpsConfidence": "NONE",
+    "gpsStatus": "MISSING",
+    "gpsRawText": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "timestampSource": "NONE",
+    "timestampConfidence": "NONE",
+    "imageDimensions": {
+      "width": 960,
+      "height": 1280
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates detected from EXIF metadata or visible image text."
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-29T06:50:50.866717+00:00"
+  },
+  {
+    "id": "ev-upload-437f0264",
+    "filename": "pexels-piat-13448547.jpg",
+    "storedFilename": "0f5dc02a47ce_pexels-piat-13448547.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "gpsSource": "NONE",
+    "gpsConfidence": "NONE",
+    "gpsStatus": "MISSING",
+    "gpsRawText": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "timestampSource": "NONE",
+    "timestampConfidence": "NONE",
+    "imageDimensions": {
+      "width": 4000,
+      "height": 6000
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates detected from EXIF metadata or visible image text."
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-29T06:50:24.469029+00:00"
+  },
+  {
+    "id": "ev-upload-000b3686",
+    "filename": "pexels-piat-13448547.jpg",
+    "storedFilename": "e4c8cf5bf0b0_pexels-piat-13448547.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "gpsSource": "NONE",
+    "gpsConfidence": "NONE",
+    "gpsStatus": "MISSING",
+    "gpsRawText": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "timestampSource": "NONE",
+    "timestampConfidence": "NONE",
+    "imageDimensions": {
+      "width": 4000,
+      "height": 6000
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates detected from EXIF metadata or visible image text."
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-29T06:18:01.314060+00:00"
+  },
+  {
+    "id": "ev-upload-752500cb",
+    "filename": "WhatsApp Image 2026-08-29 at 10.38.01 AM.jpeg",
+    "storedFilename": "9343b647dd6f_WhatsApp_Image_2026-08-29_at_10.38.01_AM.jpeg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "gpsSource": "NONE",
+    "gpsConfidence": "NONE",
+    "gpsStatus": "MISSING",
+    "gpsRawText": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "timestampSource": "NONE",
+    "timestampConfidence": "NONE",
+    "imageDimensions": {
+      "width": 960,
+      "height": 1280
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates detected from EXIF metadata or visible image text."
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-29T05:41:59.552962+00:00"
+  },
+  {
+    "id": "ev-upload-340c2fa7",
+    "filename": "WhatsApp Image 2026-08-29 at 10.38.01 AM.jpeg",
+    "storedFilename": "66bc829d8e95_WhatsApp_Image_2026-08-29_at_10.38.01_AM.jpeg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 960,
+      "height": 1280
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "rejected",
+      "verifiedBy": "demo-reviewer",
+      "verifiedAt": "2026-08-29T05:11:49.077328+00:00",
+      "reviewNote": ".."
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-29T05:09:34.447577+00:00"
+  },
+  {
+    "id": "ev-upload-4051cb44",
+    "filename": "e5ee117c-4157-4242-b17d-b7b58ad7e416.png",
+    "storedFilename": "55a059777c45_e5ee117c-4157-4242-b17d-b7b58ad7e416.png",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "rejected",
+      "verifiedBy": "demo-reviewer",
+      "verifiedAt": "2026-08-29T04:53:25.600465+00:00",
+      "reviewNote": "invalid"
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-29T04:52:51.076467+00:00"
+  },
+  {
+    "id": "ev-upload-9e8f6aa7",
+    "filename": "e5ee117c-4157-4242-b17d-b7b58ad7e416.png",
+    "storedFilename": "87e899014e40_e5ee117c-4157-4242-b17d-b7b58ad7e416.png",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "rejected",
+      "verifiedBy": "demo-reviewer",
+      "verifiedAt": "2026-08-29T04:39:52.386097+00:00",
+      "reviewNote": "invalid"
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-29T04:39:06.497820+00:00"
+  },
+  {
+    "id": "ev-upload-f672a3a1",
+    "filename": "e5ee117c-4157-4242-b17d-b7b58ad7e416.png",
+    "storedFilename": "d0e17e57a879_e5ee117c-4157-4242-b17d-b7b58ad7e416.png",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "rejected",
+      "verifiedBy": "demo-reviewer",
+      "verifiedAt": "2026-08-29T04:30:46.278046+00:00",
+      "reviewNote": "invalid"
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-29T04:30:11.521937+00:00"
+  },
+  {
+    "id": "ev-upload-dfeec612",
+    "filename": "persisted_test.jpg",
+    "storedFilename": "a1c7199ab897_persisted_test.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 2,
+      "height": 2
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "rejected",
+      "verifiedBy": "demo-reviewer",
+      "verifiedAt": "2026-08-28T16:58:11.335413+00:00",
+      "reviewNote": "Photograph is out of focus and cannot be confirmed."
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T16:58:11.016103+00:00"
+  },
+  {
+    "id": "ev-upload-4b820f80",
+    "filename": "delhi_photo.jpg",
+    "storedFilename": "5ab6df64cb47_delhi_photo.jpg",
+    "gpsAvailable": true,
+    "latitude": 28.6139,
+    "longitude": 77.209,
+    "timestampAvailable": true,
+    "captureTimestamp": "2026-08-20T14:30:00",
+    "imageDimensions": {
+      "width": 100,
+      "height": 80
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": "ws-demo-a",
+      "watershedName": "Demo Watershed A",
+      "distanceMeters": 1717764.7
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": "int-contourtrench-007",
+      "code": "Contour Trench 007",
+      "type": "Contour Trench",
+      "distanceMeters": 1956634.8
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T16:58:10.937297+00:00"
+  },
+  {
+    "id": "ev-upload-22c1b62d",
+    "filename": "field_photo.jpg",
+    "storedFilename": "592faa555876_field_photo.jpg",
+    "gpsAvailable": true,
+    "latitude": 11.016799972222223,
+    "longitude": 76.95579997222222,
+    "timestampAvailable": true,
+    "captureTimestamp": "2026-08-20T14:30:00",
+    "imageDimensions": {
+      "width": 100,
+      "height": 80
+    },
+    "watershedMatch": {
+      "matched": true,
+      "watershedId": "ws-demo-a",
+      "watershedName": "Demo Watershed A",
+      "distanceMeters": 0.0
+    },
+    "nearestIntervention": {
+      "matched": true,
+      "interventionId": "int-checkdam-024",
+      "code": "Check Dam 024",
+      "type": "Check Dam",
+      "distanceMeters": 0.0
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T16:58:10.900124+00:00"
+  },
+  {
+    "id": "ev-upload-144eb4ed",
+    "filename": "no_gps.jpg",
+    "storedFilename": "a38ef935a816_no_gps.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 2,
+      "height": 2
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T16:58:10.886188+00:00"
+  },
+  {
+    "id": "ev-upload-5f9af0ce",
+    "filename": "persisted_test.jpg",
+    "storedFilename": "1b4acb55f4fa_persisted_test.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 2,
+      "height": 2
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "rejected",
+      "verifiedBy": "demo-reviewer",
+      "verifiedAt": "2026-08-28T16:28:10.890790+00:00",
+      "reviewNote": "Photograph is out of focus and cannot be confirmed."
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T16:28:10.692887+00:00"
+  },
+  {
+    "id": "ev-upload-f0bfd664",
+    "filename": "delhi_photo.jpg",
+    "storedFilename": "2b45b56959e1_delhi_photo.jpg",
+    "gpsAvailable": true,
+    "latitude": 28.6139,
+    "longitude": 77.209,
+    "timestampAvailable": true,
+    "captureTimestamp": "2026-08-20T14:30:00",
+    "imageDimensions": {
+      "width": 100,
+      "height": 80
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": "ws-demo-a",
+      "watershedName": "Demo Watershed A",
+      "distanceMeters": 1717764.7
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": "int-contourtrench-007",
+      "code": "Contour Trench 007",
+      "type": "Contour Trench",
+      "distanceMeters": 1956634.8
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T16:28:10.646588+00:00"
+  },
+  {
+    "id": "ev-upload-59b62c14",
+    "filename": "field_photo.jpg",
+    "storedFilename": "86a3d7aa57fe_field_photo.jpg",
+    "gpsAvailable": true,
+    "latitude": 11.016799972222223,
+    "longitude": 76.95579997222222,
+    "timestampAvailable": true,
+    "captureTimestamp": "2026-08-20T14:30:00",
+    "imageDimensions": {
+      "width": 100,
+      "height": 80
+    },
+    "watershedMatch": {
+      "matched": true,
+      "watershedId": "ws-demo-a",
+      "watershedName": "Demo Watershed A",
+      "distanceMeters": 0.0
+    },
+    "nearestIntervention": {
+      "matched": true,
+      "interventionId": "int-checkdam-024",
+      "code": "Check Dam 024",
+      "type": "Check Dam",
+      "distanceMeters": 0.0
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T16:28:10.616857+00:00"
+  },
+  {
+    "id": "ev-upload-02443bfe",
+    "filename": "no_gps.jpg",
+    "storedFilename": "02e57fbcf5d0_no_gps.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 2,
+      "height": 2
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T16:28:10.607448+00:00"
+  },
+  {
+    "id": "ev-upload-51124e72",
+    "filename": "persisted_test.jpg",
+    "storedFilename": "6bf47e435b48_persisted_test.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 2,
+      "height": 2
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "rejected",
+      "verifiedBy": "demo-reviewer",
+      "verifiedAt": "2026-08-28T16:22:43.636093+00:00",
+      "reviewNote": "Photograph is out of focus and cannot be confirmed."
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T16:22:43.454402+00:00"
+  },
+  {
+    "id": "ev-upload-31d359da",
+    "filename": "delhi_photo.jpg",
+    "storedFilename": "4a9bd1b5007d_delhi_photo.jpg",
+    "gpsAvailable": true,
+    "latitude": 28.6139,
+    "longitude": 77.209,
+    "timestampAvailable": true,
+    "captureTimestamp": "2026-08-20T14:30:00",
+    "imageDimensions": {
+      "width": 100,
+      "height": 80
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": "ws-demo-a",
+      "watershedName": "Demo Watershed A",
+      "distanceMeters": 1717764.7
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": "int-contourtrench-007",
+      "code": "Contour Trench 007",
+      "type": "Contour Trench",
+      "distanceMeters": 1956634.8
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T16:22:43.412708+00:00"
+  },
+  {
+    "id": "ev-upload-5a3b416c",
+    "filename": "field_photo.jpg",
+    "storedFilename": "1d3fed57e058_field_photo.jpg",
+    "gpsAvailable": true,
+    "latitude": 11.016799972222223,
+    "longitude": 76.95579997222222,
+    "timestampAvailable": true,
+    "captureTimestamp": "2026-08-20T14:30:00",
+    "imageDimensions": {
+      "width": 100,
+      "height": 80
+    },
+    "watershedMatch": {
+      "matched": true,
+      "watershedId": "ws-demo-a",
+      "watershedName": "Demo Watershed A",
+      "distanceMeters": 0.0
+    },
+    "nearestIntervention": {
+      "matched": true,
+      "interventionId": "int-checkdam-024",
+      "code": "Check Dam 024",
+      "type": "Check Dam",
+      "distanceMeters": 0.0
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T16:22:43.390318+00:00"
+  },
+  {
+    "id": "ev-upload-9f4cb7e3",
+    "filename": "no_gps.jpg",
+    "storedFilename": "29e7c8fbb3f8_no_gps.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 2,
+      "height": 2
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T16:22:43.378281+00:00"
+  },
+  {
+    "id": "ev-upload-c5c12330",
+    "filename": "e5ee117c-4157-4242-b17d-b7b58ad7e416.png",
+    "storedFilename": "6fddabdfaef9_e5ee117c-4157-4242-b17d-b7b58ad7e416.png",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 1448,
+      "height": 1086
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "rejected",
+      "verifiedBy": "demo-reviewer",
+      "verifiedAt": "2026-08-28T15:47:18.966387+00:00",
+      "reviewNote": "NOT A VALID IMAGS"
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T15:46:41.061124+00:00"
+  },
+  {
+    "id": "ev-upload-847f7453",
+    "filename": "Teal and Black Modern Programmer New LinkedIn Banner.png",
+    "storedFilename": "88051922f942_Teal_and_Black_Modern_Programmer_New_LinkedIn_Banner.png",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 1584,
+      "height": 396
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "rejected",
+      "verifiedBy": "demo-reviewer",
+      "verifiedAt": "2026-08-28T15:06:17.507383+00:00",
+      "reviewNote": "not a valid image"
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T15:05:32.487878+00:00"
+  },
+  {
+    "id": "ev-upload-94e7755b",
+    "filename": "persisted_test.jpg",
+    "storedFilename": "be42c07a789e_persisted_test.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 2,
+      "height": 2
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "rejected",
+      "verifiedBy": "demo-reviewer",
+      "verifiedAt": "2026-08-28T14:15:23.334597+00:00",
+      "reviewNote": "gps is missing"
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T13:37:29.253966+00:00"
+  },
+  {
+    "id": "ev-upload-fa434ce2",
+    "filename": "delhi_photo.jpg",
+    "storedFilename": "59c0fad46701_delhi_photo.jpg",
+    "gpsAvailable": true,
+    "latitude": 28.6139,
+    "longitude": 77.209,
+    "timestampAvailable": true,
+    "captureTimestamp": "2026-08-20T14:30:00",
+    "imageDimensions": {
+      "width": 100,
+      "height": 80
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": "ws-demo-a",
+      "watershedName": "Demo Watershed A",
+      "distanceMeters": 1717764.7
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": "int-contourtrench-007",
+      "code": "Contour Trench 007",
+      "type": "Contour Trench",
+      "distanceMeters": 1956634.8
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T13:37:29.210162+00:00"
+  },
+  {
+    "id": "ev-upload-8a8709b6",
+    "filename": "field_photo.jpg",
+    "storedFilename": "9d827d0954fd_field_photo.jpg",
+    "gpsAvailable": true,
+    "latitude": 11.016799972222223,
+    "longitude": 76.95579997222222,
+    "timestampAvailable": true,
+    "captureTimestamp": "2026-08-20T14:30:00",
+    "imageDimensions": {
+      "width": 100,
+      "height": 80
+    },
+    "watershedMatch": {
+      "matched": true,
+      "watershedId": "ws-demo-a",
+      "watershedName": "Demo Watershed A",
+      "distanceMeters": 0.0
+    },
+    "nearestIntervention": {
+      "matched": true,
+      "interventionId": "int-checkdam-024",
+      "code": "Check Dam 024",
+      "type": "Check Dam",
+      "distanceMeters": 0.0
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    },
+    "verification": {
+      "status": "rejected",
+      "verifiedBy": "demo-reviewer",
+      "verifiedAt": "2026-08-28T16:03:23.272779+00:00",
+      "reviewNote": "not valid images"
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T13:37:29.189440+00:00"
+  },
+  {
+    "id": "ev-upload-b0ce467d",
+    "filename": "no_gps.jpg",
+    "storedFilename": "18450d518726_no_gps.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 2,
+      "height": 2
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T13:37:29.177975+00:00"
+  },
+  {
+    "id": "ev-upload-4b41ec23",
+    "filename": "persisted_test.jpg",
+    "storedFilename": "3501f636a285_persisted_test.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 2,
+      "height": 2
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "rejected",
+      "verifiedBy": "demo-reviewer",
+      "verifiedAt": "2026-08-28T15:08:46.036787+00:00",
+      "reviewNote": "Photograph is out of focus and cannot be confirmed."
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T09:46:48.087426+00:00"
+  },
+  {
+    "id": "ev-upload-06594143",
+    "filename": "delhi_photo.jpg",
+    "storedFilename": "3968c374b27f_delhi_photo.jpg",
+    "gpsAvailable": true,
+    "latitude": 28.6139,
+    "longitude": 77.209,
+    "timestampAvailable": true,
+    "captureTimestamp": "2026-08-20T14:30:00",
+    "imageDimensions": {
+      "width": 100,
+      "height": 80
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": "ws-demo-a",
+      "watershedName": "Demo Watershed A",
+      "distanceMeters": 1717764.7
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": "int-contourtrench-007",
+      "code": "Contour Trench 007",
+      "type": "Contour Trench",
+      "distanceMeters": 1956634.8
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T09:46:48.052392+00:00"
+  },
+  {
+    "id": "ev-upload-1230249b",
+    "filename": "field_photo.jpg",
+    "storedFilename": "8d4014c3ad3f_field_photo.jpg",
+    "gpsAvailable": true,
+    "latitude": 11.016799972222223,
+    "longitude": 76.95579997222222,
+    "timestampAvailable": true,
+    "captureTimestamp": "2026-08-20T14:30:00",
+    "imageDimensions": {
+      "width": 100,
+      "height": 80
+    },
+    "watershedMatch": {
+      "matched": true,
+      "watershedId": "ws-demo-a",
+      "watershedName": "Demo Watershed A",
+      "distanceMeters": 0.0
+    },
+    "nearestIntervention": {
+      "matched": true,
+      "interventionId": "int-checkdam-024",
+      "code": "Check Dam 024",
+      "type": "Check Dam",
+      "distanceMeters": 0.0
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T09:46:48.033701+00:00"
+  },
+  {
+    "id": "ev-upload-f061ca8b",
+    "filename": "no_gps.jpg",
+    "storedFilename": "e80a24410b63_no_gps.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 2,
+      "height": 2
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T09:46:48.026874+00:00"
+  },
+  {
+    "id": "ev-upload-13712e99",
+    "filename": "persisted_test.jpg",
+    "storedFilename": "12fad75c3eeb_persisted_test.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 2,
+      "height": 2
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "rejected",
+      "verifiedBy": "demo-reviewer",
+      "verifiedAt": "2026-08-28T09:44:47.920417+00:00",
+      "reviewNote": "Photograph is out of focus and cannot be confirmed."
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T09:44:47.799746+00:00"
+  },
+  {
+    "id": "ev-upload-7d5b6a2e",
+    "filename": "delhi_photo.jpg",
+    "storedFilename": "9e6e915abf10_delhi_photo.jpg",
+    "gpsAvailable": true,
+    "latitude": 28.6139,
+    "longitude": 77.209,
+    "timestampAvailable": true,
+    "captureTimestamp": "2026-08-20T14:30:00",
+    "imageDimensions": {
+      "width": 100,
+      "height": 80
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": "ws-demo-a",
+      "watershedName": "Demo Watershed A",
+      "distanceMeters": 1717764.7
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": "int-contourtrench-007",
+      "code": "Contour Trench 007",
+      "type": "Contour Trench",
+      "distanceMeters": 1956634.8
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T09:44:47.771383+00:00"
+  },
+  {
+    "id": "ev-upload-942b8872",
+    "filename": "field_photo.jpg",
+    "storedFilename": "2b8983ba800e_field_photo.jpg",
+    "gpsAvailable": true,
+    "latitude": 11.016799972222223,
+    "longitude": 76.95579997222222,
+    "timestampAvailable": true,
+    "captureTimestamp": "2026-08-20T14:30:00",
+    "imageDimensions": {
+      "width": 100,
+      "height": 80
+    },
+    "watershedMatch": {
+      "matched": true,
+      "watershedId": "ws-demo-a",
+      "watershedName": "Demo Watershed A",
+      "distanceMeters": 0.0
+    },
+    "nearestIntervention": {
+      "matched": true,
+      "interventionId": "int-checkdam-024",
+      "code": "Check Dam 024",
+      "type": "Check Dam",
+      "distanceMeters": 0.0
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T09:44:47.755008+00:00"
+  },
+  {
+    "id": "ev-upload-500cf469",
+    "filename": "no_gps.jpg",
+    "storedFilename": "df0227d9f08f_no_gps.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 2,
+      "height": 2
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T09:44:47.747790+00:00"
+  },
+  {
+    "id": "ev-upload-5faff2d0",
+    "filename": "persisted_test.jpg",
+    "storedFilename": "f3c7f726df88_persisted_test.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 2,
+      "height": 2
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "rejected",
+      "verifiedBy": "demo-reviewer",
+      "verifiedAt": "2026-08-28T09:41:07.075484+00:00",
+      "reviewNote": "Photograph is out of focus and cannot be confirmed."
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T09:41:07.035055+00:00"
+  },
+  {
+    "id": "ev-upload-328c036a",
+    "filename": "delhi_photo.jpg",
+    "storedFilename": "1971b014809e_delhi_photo.jpg",
+    "gpsAvailable": true,
+    "latitude": 28.6139,
+    "longitude": 77.209,
+    "timestampAvailable": true,
+    "captureTimestamp": "2026-08-20T14:30:00",
+    "imageDimensions": {
+      "width": 100,
+      "height": 80
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": "ws-demo-a",
+      "watershedName": "Demo Watershed A",
+      "distanceMeters": 1717764.7
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": "int-contourtrench-007",
+      "code": "Contour Trench 007",
+      "type": "Contour Trench",
+      "distanceMeters": 1956634.8
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T09:41:07.000659+00:00"
+  },
+  {
+    "id": "ev-upload-d6491f4d",
+    "filename": "field_photo.jpg",
+    "storedFilename": "f35a34e5db88_field_photo.jpg",
+    "gpsAvailable": true,
+    "latitude": 11.016799972222223,
+    "longitude": 76.95579997222222,
+    "timestampAvailable": true,
+    "captureTimestamp": "2026-08-20T14:30:00",
+    "imageDimensions": {
+      "width": 100,
+      "height": 80
+    },
+    "watershedMatch": {
+      "matched": true,
+      "watershedId": "ws-demo-a",
+      "watershedName": "Demo Watershed A",
+      "distanceMeters": 0.0
+    },
+    "nearestIntervention": {
+      "matched": true,
+      "interventionId": "int-checkdam-024",
+      "code": "Check Dam 024",
+      "type": "Check Dam",
+      "distanceMeters": 0.0
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T09:41:06.977939+00:00"
+  },
+  {
+    "id": "ev-upload-222d2c4c",
+    "filename": "no_gps.jpg",
+    "storedFilename": "8e9892281841_no_gps.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 2,
+      "height": 2
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T09:41:06.969839+00:00"
+  },
+  {
+    "id": "ev-upload-308dac13",
+    "filename": "persisted_test.jpg",
+    "storedFilename": "5531bfeb57ae_persisted_test.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 2,
+      "height": 2
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "rejected",
+      "verifiedBy": "demo-reviewer",
+      "verifiedAt": "2026-08-28T09:08:10.857695+00:00",
+      "reviewNote": "Photograph is out of focus and cannot be confirmed."
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T09:08:10.778313+00:00"
+  },
+  {
+    "id": "ev-upload-f3aae7f7",
+    "filename": "delhi_photo.jpg",
+    "storedFilename": "3254210a9518_delhi_photo.jpg",
+    "gpsAvailable": true,
+    "latitude": 28.6139,
+    "longitude": 77.209,
+    "timestampAvailable": true,
+    "captureTimestamp": "2026-08-20T14:30:00",
+    "imageDimensions": {
+      "width": 100,
+      "height": 80
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": "ws-demo-a",
+      "watershedName": "Demo Watershed A",
+      "distanceMeters": 1717764.7
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": "int-contourtrench-007",
+      "code": "Contour Trench 007",
+      "type": "Contour Trench",
+      "distanceMeters": 1956634.8
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T09:08:10.713975+00:00"
+  },
+  {
+    "id": "ev-upload-556a5e4c",
+    "filename": "field_photo.jpg",
+    "storedFilename": "b8d07cb38ea4_field_photo.jpg",
+    "gpsAvailable": true,
+    "latitude": 11.016799972222223,
+    "longitude": 76.95579997222222,
+    "timestampAvailable": true,
+    "captureTimestamp": "2026-08-20T14:30:00",
+    "imageDimensions": {
+      "width": 100,
+      "height": 80
+    },
+    "watershedMatch": {
+      "matched": true,
+      "watershedId": "ws-demo-a",
+      "watershedName": "Demo Watershed A",
+      "distanceMeters": 0.0
+    },
+    "nearestIntervention": {
+      "matched": true,
+      "interventionId": "int-checkdam-024",
+      "code": "Check Dam 024",
+      "type": "Check Dam",
+      "distanceMeters": 0.0
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T09:08:10.668631+00:00"
+  },
+  {
+    "id": "ev-upload-0a90a291",
+    "filename": "no_gps.jpg",
+    "storedFilename": "ba940c982c80_no_gps.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 2,
+      "height": 2
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T09:08:10.657014+00:00"
+  },
+  {
+    "id": "ev-upload-95ccc9a7",
+    "filename": "persisted_test.jpg",
+    "storedFilename": "86593ea099e5_persisted_test.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 2,
+      "height": 2
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T08:44:21.548794+00:00",
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    }
+  },
+  {
+    "id": "ev-upload-8b3c6dbf",
+    "filename": "delhi_photo.jpg",
+    "storedFilename": "578a17ff0e39_delhi_photo.jpg",
+    "gpsAvailable": true,
+    "latitude": 28.6139,
+    "longitude": 77.209,
+    "timestampAvailable": true,
+    "captureTimestamp": "2026-08-20T14:30:00",
+    "imageDimensions": {
+      "width": 100,
+      "height": 80
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": "ws-demo-a",
+      "watershedName": "Demo Watershed A",
+      "distanceMeters": 1717764.7
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": "int-contourtrench-007",
+      "code": "Contour Trench 007",
+      "type": "Contour Trench",
+      "distanceMeters": 1956634.8
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T08:44:21.450776+00:00",
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    }
+  },
+  {
+    "id": "ev-upload-b6bf9016",
+    "filename": "field_photo.jpg",
+    "storedFilename": "52d2a6510ccb_field_photo.jpg",
+    "gpsAvailable": true,
+    "latitude": 11.016799972222223,
+    "longitude": 76.95579997222222,
+    "timestampAvailable": true,
+    "captureTimestamp": "2026-08-20T14:30:00",
+    "imageDimensions": {
+      "width": 100,
+      "height": 80
+    },
+    "watershedMatch": {
+      "matched": true,
+      "watershedId": "ws-demo-a",
+      "watershedName": "Demo Watershed A",
+      "distanceMeters": 0.0
+    },
+    "nearestIntervention": {
+      "matched": true,
+      "interventionId": "int-checkdam-024",
+      "code": "Check Dam 024",
+      "type": "Check Dam",
+      "distanceMeters": 0.0
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T08:44:21.333532+00:00",
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    }
+  },
+  {
+    "id": "ev-upload-a2121f24",
+    "filename": "no_gps.jpg",
+    "storedFilename": "d2256755bed7_no_gps.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 2,
+      "height": 2
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T08:44:21.258705+00:00",
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    }
+  },
+  {
+    "id": "ev-upload-854006df",
+    "filename": "persisted_test.jpg",
+    "storedFilename": "35719a2ea6d1_persisted_test.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 2,
+      "height": 2
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T08:39:51.876749+00:00",
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    }
+  },
+  {
+    "id": "ev-upload-6a1c8432",
+    "filename": "delhi_photo.jpg",
+    "storedFilename": "f359f8a5d6bb_delhi_photo.jpg",
+    "gpsAvailable": true,
+    "latitude": 28.6139,
+    "longitude": 77.209,
+    "timestampAvailable": true,
+    "captureTimestamp": "2026-08-20T14:30:00",
+    "imageDimensions": {
+      "width": 100,
+      "height": 80
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": "ws-demo-a",
+      "watershedName": "Demo Watershed A",
+      "distanceMeters": 1717764.7
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": "int-contourtrench-007",
+      "code": "Contour Trench 007",
+      "type": "Contour Trench",
+      "distanceMeters": 1956634.8
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T08:39:51.769219+00:00",
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    }
+  },
+  {
+    "id": "ev-upload-2a7fea87",
+    "filename": "field_photo.jpg",
+    "storedFilename": "4e548934af8a_field_photo.jpg",
+    "gpsAvailable": true,
+    "latitude": 11.016799972222223,
+    "longitude": 76.95579997222222,
+    "timestampAvailable": true,
+    "captureTimestamp": "2026-08-20T14:30:00",
+    "imageDimensions": {
+      "width": 100,
+      "height": 80
+    },
+    "watershedMatch": {
+      "matched": true,
+      "watershedId": "ws-demo-a",
+      "watershedName": "Demo Watershed A",
+      "distanceMeters": 0.0
+    },
+    "nearestIntervention": {
+      "matched": true,
+      "interventionId": "int-checkdam-024",
+      "code": "Check Dam 024",
+      "type": "Check Dam",
+      "distanceMeters": 0.0
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T08:39:51.672027+00:00",
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    }
+  },
+  {
+    "id": "ev-upload-10dffe40",
+    "filename": "no_gps.jpg",
+    "storedFilename": "2f691fa9a989_no_gps.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 2,
+      "height": 2
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T08:39:51.659569+00:00",
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    }
+  },
+  {
+    "id": "ev-upload-80d3c6ac",
+    "filename": "persisted_test.jpg",
+    "storedFilename": "c663a0c133dc_persisted_test.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 2,
+      "height": 2
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T08:36:37.068799+00:00",
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    }
+  },
+  {
+    "id": "ev-upload-6b7971d0",
+    "filename": "delhi_photo.jpg",
+    "storedFilename": "5e347e06b823_delhi_photo.jpg",
+    "gpsAvailable": true,
+    "latitude": 28.6139,
+    "longitude": 77.209,
+    "timestampAvailable": true,
+    "captureTimestamp": "2026-08-20T14:30:00",
+    "imageDimensions": {
+      "width": 100,
+      "height": 80
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": "ws-demo-a",
+      "watershedName": "Demo Watershed A",
+      "distanceMeters": 1717764.7
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": "int-contourtrench-007",
+      "code": "Contour Trench 007",
+      "type": "Contour Trench",
+      "distanceMeters": 1956634.8
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T08:36:37.006363+00:00",
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    }
+  },
+  {
+    "id": "ev-upload-5eda3186",
+    "filename": "field_photo.jpg",
+    "storedFilename": "8d74bc7c061e_field_photo.jpg",
+    "gpsAvailable": true,
+    "latitude": 11.016799972222223,
+    "longitude": 76.95579997222222,
+    "timestampAvailable": true,
+    "captureTimestamp": "2026-08-20T14:30:00",
+    "imageDimensions": {
+      "width": 100,
+      "height": 80
+    },
+    "watershedMatch": {
+      "matched": true,
+      "watershedId": "ws-demo-a",
+      "watershedName": "Demo Watershed A",
+      "distanceMeters": 0.0
+    },
+    "nearestIntervention": {
+      "matched": true,
+      "interventionId": "int-checkdam-024",
+      "code": "Check Dam 024",
+      "type": "Check Dam",
+      "distanceMeters": 0.0
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T08:36:36.973916+00:00",
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    }
+  },
+  {
+    "id": "ev-upload-ba626df5",
+    "filename": "no_gps.jpg",
+    "storedFilename": "1445b935c931_no_gps.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 2,
+      "height": 2
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T08:36:36.960986+00:00",
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    }
+  },
+  {
+    "id": "ev-upload-f6810591",
+    "filename": "persisted_test.jpg",
+    "storedFilename": "d9bcb9be961c_persisted_test.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 2,
+      "height": 2
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T08:31:47.130911+00:00",
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    }
+  },
+  {
+    "id": "ev-upload-c5548016",
+    "filename": "delhi_photo.jpg",
+    "storedFilename": "0557f89d7aac_delhi_photo.jpg",
+    "gpsAvailable": true,
+    "latitude": 28.6139,
+    "longitude": 77.209,
+    "timestampAvailable": true,
+    "captureTimestamp": "2026-08-20T14:30:00",
+    "imageDimensions": {
+      "width": 100,
+      "height": 80
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": "ws-demo-a",
+      "watershedName": "Demo Watershed A",
+      "distanceMeters": 1717764.7
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": "int-contourtrench-007",
+      "code": "Contour Trench 007",
+      "type": "Contour Trench",
+      "distanceMeters": 1956634.8
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T08:31:47.078915+00:00",
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    }
+  },
+  {
+    "id": "ev-upload-412782b5",
+    "filename": "field_photo.jpg",
+    "storedFilename": "a78ffe008ee6_field_photo.jpg",
+    "gpsAvailable": true,
+    "latitude": 11.016799972222223,
+    "longitude": 76.95579997222222,
+    "timestampAvailable": true,
+    "captureTimestamp": "2026-08-20T14:30:00",
+    "imageDimensions": {
+      "width": 100,
+      "height": 80
+    },
+    "watershedMatch": {
+      "matched": true,
+      "watershedId": "ws-demo-a",
+      "watershedName": "Demo Watershed A",
+      "distanceMeters": 0.0
+    },
+    "nearestIntervention": {
+      "matched": true,
+      "interventionId": "int-checkdam-024",
+      "code": "Check Dam 024",
+      "type": "Check Dam",
+      "distanceMeters": 0.0
+    },
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T08:31:47.048548+00:00",
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    }
+  },
+  {
+    "id": "ev-upload-ed672bc4",
+    "filename": "no_gps.jpg",
+    "storedFilename": "927092ff7aa2_no_gps.jpg",
+    "gpsAvailable": false,
+    "latitude": null,
+    "longitude": null,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "imageDimensions": {
+      "width": 2,
+      "height": 2
+    },
+    "watershedMatch": {
+      "matched": false,
+      "watershedId": null,
+      "watershedName": null,
+      "distanceMeters": null
+    },
+    "nearestIntervention": {
+      "matched": false,
+      "interventionId": null,
+      "code": null,
+      "type": null,
+      "distanceMeters": null
+    },
+    "validation": {
+      "valid": false,
+      "errors": [
+        "No GPS coordinates available in EXIF data"
+      ],
+      "warnings": []
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T08:31:47.039042+00:00",
+    "verification": {
+      "status": "requires_verification",
+      "verifiedBy": null,
+      "verifiedAt": null,
+      "reviewNote": null
+    }
+  },
+  {
+    "id": "ev-unit-test-01",
+    "filename": "unit_test.jpg",
+    "storedFilename": "unit_test_stored.jpg",
+    "gpsAvailable": true,
+    "latitude": 11.0168,
+    "longitude": 76.9558,
+    "timestampAvailable": false,
+    "captureTimestamp": null,
+    "watershedMatch": {
+      "matched": true,
+      "watershedId": "ws-demo-a"
+    },
+    "nearestIntervention": {
+      "matched": true,
+      "code": "Check Dam 024"
+    },
+    "validation": {
+      "valid": true,
+      "errors": []
+    },
+    "verification": {
+      "status": "verified",
+      "verifiedBy": "demo-reviewer",
+      "verifiedAt": "2026-08-28T16:58:08.964529+00:00",
+      "reviewNote": "Verified in field."
+    },
+    "source": "uploaded",
+    "createdAt": "2026-08-28T14:00:00Z"
+  }
+]

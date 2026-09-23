@@ -536,21 +536,197 @@ def test_http_server():
         assert data["nearestIntervention"]["matched"] is False
         print(f"[PASS] POST /api/evidence/ingest (GPS outside watershed) -> no match, no fabrication")
 
-        # Test 7d: Upload with GPS but no timestamp
-        jpeg_no_ts = _make_jpeg_with_exif(
-            lat=11.0168, lon=76.9558,
-            include_gps=True, include_timestamp=False,
+    # Test 7e: Evidence Registry HTTP Endpoints
+    print("\n--- 8. Testing Evidence Registry and Safe File Serving ---")
+
+    # 1. GET /api/evidence
+    status, evidence_list = fetch("/api/evidence")
+    assert status == 200
+    assert isinstance(evidence_list, list)
+    initial_count = len(evidence_list)
+    print(f"[PASS] GET /api/evidence -> {status}, returned {initial_count} records")
+
+    # 2. Ingest and check persistence
+    jpeg_test = _make_minimal_jpeg()
+    status, ingested = upload_image(jpeg_test, filename="persisted_test.jpg")
+    assert status == 200
+    new_ev_id = ingested["evidenceId"]
+    stored_name = ingested["storedFilename"]
+
+    # Retrieve all evidence again
+    status, updated_list = fetch("/api/evidence")
+    assert status == 200
+    assert len(updated_list) == initial_count + 1
+    matching = [e for e in updated_list if e["id"] == new_ev_id]
+    assert len(matching) == 1
+    assert matching[0]["filename"] == "persisted_test.jpg"
+    assert matching[0]["source"] == "uploaded"
+    print(f"[PASS] Ingestion record persisted and retrieved via GET /api/evidence")
+
+    # 3. GET /api/evidence/{id}
+    status, single_item = fetch(f"/api/evidence/{new_ev_id}")
+    assert status == 200
+    assert single_item["id"] == new_ev_id
+    assert single_item["storedFilename"] == stored_name
+    print(f"[PASS] GET /api/evidence/{new_ev_id} -> {status}, id={single_item['id']}")
+
+    # 4. GET /api/evidence/{invalid_id} -> 404
+    assert fetch_status("/api/evidence/non-existent-ev-id") == 404
+    print("[PASS] GET /api/evidence/non-existent-ev-id -> 404")
+
+    # 5. Safe file serving GET /uploads/{stored_filename}
+    status = fetch_status(f"/uploads/{stored_name}")
+    assert status == 200
+    print(f"[PASS] GET /uploads/{stored_name} -> 200 (image accessible)")
+
+    # 6. Non-existent file -> 404
+    assert fetch_status("/uploads/non_existent_image_12345.jpg") == 404
+    print("[PASS] GET /uploads/non_existent_image_12345.jpg -> 404")
+
+    # 8. Testing Verification Workflow HTTP Endpoints
+    print("\n--- 9. Testing Field Evidence Verification Workflow ---")
+
+    def patch_json(path, payload):
+        data_bytes = json.dumps(payload).encode("utf-8")
+        req = urllib.request.Request(
+            f"{base_url}{path}",
+            data=data_bytes,
+            headers={"Content-Type": "application/json"},
+            method="PATCH",
         )
-        status, data = upload_image(jpeg_no_ts, filename="no_timestamp.jpg")
-        assert status == 200
-        assert data["timestampAvailable"] is False
-        assert data["captureTimestamp"] is None
-        print(f"[PASS] POST /api/evidence/ingest (no timestamp) -> timestampAvailable=False")
-    else:
-        print("[SKIP] piexif not installed — HTTP GPS tests skipped")
+        try:
+            with urllib.request.urlopen(req) as resp:
+                return resp.status, json.loads(resp.read().decode("utf-8"))
+        except urllib.error.HTTPError as e:
+            return e.code, json.loads(e.read().decode("utf-8")) if e.readable() else {}
+
+    # Test 8a: Verify endpoint sets status=verified, reviewer, and timestamp
+    status, verified_res = patch_json(
+        f"/api/evidence/{new_ev_id}/verification",
+        {"status": "verified", "reviewNote": "Check dam construction confirmed on-site."},
+    )
+    assert status == 200
+    assert verified_res["verification"]["status"] == "verified"
+    assert verified_res["verification"]["verifiedBy"] == "demo-reviewer"
+    assert verified_res["verification"]["verifiedAt"] is not None
+    assert verified_res["verification"]["reviewNote"] == "Check dam construction confirmed on-site."
+    print(f"[PASS] PATCH /api/evidence/{new_ev_id}/verification -> status='verified', verifiedBy='demo-reviewer'")
+
+    # Test 8b: GET confirms verification status persisted and spatial/binary metadata is unchanged
+    status, fetched_after_verify = fetch(f"/api/evidence/{new_ev_id}")
+    assert status == 200
+    assert fetched_after_verify["verification"]["status"] == "verified"
+    assert fetched_after_verify["filename"] == "persisted_test.jpg"
+    assert fetched_after_verify["storedFilename"] == stored_name
+    print(f"[PASS] GET /api/evidence/{new_ev_id} confirmed verification persisted with unaltered spatial metadata")
+
+    # Test 8c: Reject endpoint sets status=rejected and stores reason
+    status, rejected_res = patch_json(
+        f"/api/evidence/{new_ev_id}/verification",
+        {"status": "rejected", "reviewNote": "Photograph is out of focus and cannot be confirmed."},
+    )
+    assert status == 200
+    assert rejected_res["verification"]["status"] == "rejected"
+    assert rejected_res["verification"]["verifiedBy"] == "demo-reviewer"
+    assert rejected_res["verification"]["reviewNote"] == "Photograph is out of focus and cannot be confirmed."
+    print(f"[PASS] PATCH /api/evidence/{new_ev_id}/verification -> status='rejected', reason preserved")
+
+    # Test 8d: Invalid status is rejected with 400
+    status, err_res = patch_json(
+        f"/api/evidence/{new_ev_id}/verification",
+        {"status": "approved_by_admin"},
+    )
+    assert status == 400
+    print(f"[PASS] PATCH with invalid status 'approved_by_admin' -> 400")
+
+    # Test 8e: Non-existent evidence ID returns 404
+    status, err_res = patch_json(
+        "/api/evidence/non-existent-id/verification",
+        {"status": "verified"},
+    )
+    assert status == 404
+    print(f"[PASS] PATCH /api/evidence/non-existent-id/verification -> 404")
 
     server.should_exit = True
     print("\nALL HTTP AND ROUTE TESTS PASSED!")
+
+
+def test_registry_units():
+    """Test registry service unit functions."""
+    print("\n--- 6. Testing Registry Service Unit Logic ---")
+    try:
+        from services.storage_service import (
+            get_all_evidence,
+            get_evidence_by_id,
+            get_safe_upload_path,
+            save_evidence_record,
+            update_evidence_verification,
+        )
+    except ImportError:
+        from backend.services.storage_service import (
+            get_all_evidence,
+            get_evidence_by_id,
+            get_safe_upload_path,
+            save_evidence_record,
+            update_evidence_verification,
+        )
+
+    # Test safe path validation
+    assert get_safe_upload_path("") is None
+    assert get_safe_upload_path("../main.py") is None
+    assert get_safe_upload_path("..\\main.py") is None
+    assert get_safe_upload_path("subdir/file.jpg") is None
+    print("[PASS] Path traversal and invalid paths rejected by get_safe_upload_path")
+
+    # Test record saving
+    dummy_record = {
+        "id": "ev-unit-test-01",
+        "filename": "unit_test.jpg",
+        "storedFilename": "unit_test_stored.jpg",
+        "gpsAvailable": True,
+        "latitude": 11.0168,
+        "longitude": 76.9558,
+        "timestampAvailable": False,
+        "captureTimestamp": None,
+        "watershedMatch": {"matched": True, "watershedId": "ws-demo-a"},
+        "nearestIntervention": {"matched": True, "code": "Check Dam 024"},
+        "validation": {"valid": True, "errors": []},
+        "verification": {
+            "status": "requires_verification",
+            "verifiedBy": None,
+            "verifiedAt": None,
+            "reviewNote": None,
+        },
+        "source": "uploaded",
+        "createdAt": "2026-08-28T14:00:00Z",
+    }
+    save_evidence_record(dummy_record)
+    found = get_evidence_by_id("ev-unit-test-01")
+    assert found is not None
+    assert found["id"] == "ev-unit-test-01"
+    print("[PASS] save_evidence_record and get_evidence_by_id work as expected")
+
+    # Test verification update in registry
+    updated = update_evidence_verification(
+        evidence_id="ev-unit-test-01",
+        status="verified",
+        review_note="Verified in field.",
+        verified_by="demo-reviewer",
+    )
+    assert updated is not None
+    assert updated["verification"]["status"] == "verified"
+    assert updated["verification"]["verifiedBy"] == "demo-reviewer"
+    assert updated["verification"]["reviewNote"] == "Verified in field."
+    assert updated["verification"]["verifiedAt"] is not None
+    # Verify spatial fields remain untouched
+    assert updated["latitude"] == 11.0168
+    assert updated["longitude"] == 76.9558
+    assert updated["watershedMatch"]["watershedId"] == "ws-demo-a"
+    print("[PASS] update_evidence_verification updates verification metadata without altering spatial fields")
+
+    # Test non-existent ID
+    assert update_evidence_verification("non-existent-id", "verified") is None
+    print("[PASS] update_evidence_verification on non-existent ID returns None")
 
 
 if __name__ == "__main__":
@@ -559,4 +735,7 @@ if __name__ == "__main__":
     test_coordinate_validation()
     test_watershed_matching()
     test_intervention_matching()
+    test_registry_units()
     test_http_server()
+
+

@@ -14,7 +14,7 @@ export default function Dashboard() {
   const areas = priorityAreas.filter((p) => p.watershedId === watershed.id);
 
   return (
-    <div className="p-5 space-y-4">
+    <div className="p-5 space-y-4 max-w-7xl">
       <div className="flex gap-4 flex-wrap">
         <MetricCard label="Active Watersheds" value={dashboardSummary.activeWatersheds.toString()} />
         <MetricCard
@@ -42,23 +42,23 @@ export default function Dashboard() {
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        <div className="bg-white border border-gray-200 rounded-lg p-4">
+        <div className="bg-gis-card border border-gis-border rounded-lg p-4 shadow-sm">
           <div className="flex items-center justify-between mb-3">
-            <h2 className="text-xs font-semibold uppercase tracking-wide text-gray-500">
-              Recent Field Evidence
+            <h2 className="text-xs font-bold uppercase tracking-wider text-gis-text-dim">
+              Recent Field Evidence (Prototype)
             </h2>
-            <Link to="field-evidence" className="text-xs text-brand-600 font-medium hover:underline">
+            <Link to="field-evidence" className="text-xs text-brand-400 font-semibold hover:underline">
               View all
             </Link>
           </div>
-          <ul className="divide-y divide-gray-100">
+          <ul className="divide-y divide-gis-border">
             {recentEvidence.map((ev) => {
               const intervention = getInterventionById(ev.interventionId);
               return (
-                <li key={ev.id} className="py-2 flex items-center justify-between text-sm">
+                <li key={ev.id} className="py-2.5 flex items-center justify-between text-sm">
                   <div>
-                    <div className="font-medium text-gray-800">{intervention?.code ?? "Unlinked"}</div>
-                    <div className="text-[11px] text-gray-400">
+                    <div className="font-semibold text-gis-text">{intervention?.code ?? "Unlinked"}</div>
+                    <div className="text-[11px] text-gis-text-dim">
                       {new Date(ev.captureDate).toLocaleDateString("en-IN", {
                         day: "2-digit",
                         month: "short",
@@ -75,21 +75,21 @@ export default function Dashboard() {
           </ul>
         </div>
 
-        <div className="bg-white border border-gray-200 rounded-lg p-4">
+        <div className="bg-gis-card border border-gis-border rounded-lg p-4 shadow-sm">
           <div className="flex items-center justify-between mb-3">
-            <h2 className="text-xs font-semibold uppercase tracking-wide text-gray-500">
-              Priority Areas
+            <h2 className="text-xs font-bold uppercase tracking-wider text-gis-text-dim">
+              Priority Areas (Indicative)
             </h2>
-            <Link to="/priority-areas" className="text-xs text-brand-600 font-medium hover:underline">
+            <Link to="/priority-areas" className="text-xs text-brand-400 font-semibold hover:underline">
               View all
             </Link>
           </div>
-          <ul className="divide-y divide-gray-100">
+          <ul className="divide-y divide-gis-border">
             {areas.map((area) => (
-              <li key={area.id} className="py-2 flex items-start justify-between gap-3 text-sm">
+              <li key={area.id} className="py-2.5 flex items-start justify-between gap-3 text-sm">
                 <div>
-                  <div className="font-medium text-gray-800">{area.label}</div>
-                  <div className="text-[11px] text-gray-400">{area.reason}</div>
+                  <div className="font-semibold text-gis-text">{area.label}</div>
+                  <div className="text-[11px] text-gis-text-dim">{area.reason}</div>
                 </div>
                 <Badge tone={severityTone[area.severity]}>{area.severity}</Badge>
               </li>
@@ -98,9 +98,8 @@ export default function Dashboard() {
         </div>
       </div>
 
-      <p className="text-[11px] text-gray-400">
-        Metrics above are Prototype Demonstration Data for SIH26015 and do not represent verified
-        government measurements.
+      <p className="text-[11px] text-gis-text-dim">
+        Metrics above are Prototype Demonstration Data for SIH26015 and do not represent verified government measurements.
       </p>
     </div>
   );

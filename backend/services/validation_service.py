@@ -20,19 +20,24 @@ class ValidationResult:
 
     valid: bool = False
     errors: list[str] = field(default_factory=list)
+    warnings: list[str] = field(default_factory=list)
 
 
 def validate_coordinates(
     latitude: Optional[float],
     longitude: Optional[float],
     gps_available: bool,
+    gps_source: str = "NONE",
+    confidence: str = "NONE",
 ) -> ValidationResult:
     """Validate extracted GPS coordinates.
 
     Args:
         latitude: Extracted latitude (may be None).
         longitude: Extracted longitude (may be None).
-        gps_available: Whether GPS data was found in EXIF.
+        gps_available: Whether GPS data was found (EXIF or Visual Overlay).
+        gps_source: Source of the GPS ('EXIF', 'VISUAL_OVERLAY', 'NONE').
+        confidence: Confidence level of extraction.
 
     Returns:
         ValidationResult indicating whether coordinates are usable.
@@ -40,7 +45,7 @@ def validate_coordinates(
     result = ValidationResult()
 
     if not gps_available:
-        result.errors.append("No GPS coordinates available in EXIF data")
+        result.errors.append("No GPS coordinates detected from EXIF metadata or visible image text.")
         return result
 
     if latitude is None or longitude is None:
@@ -48,24 +53,25 @@ def validate_coordinates(
         return result
 
     errors: list[str] = []
+    warnings: list[str] = []
 
     if not isinstance(latitude, (int, float)):
         errors.append(f"Latitude is not a number: {latitude!r}")
     elif latitude < -90.0 or latitude > 90.0:
-        errors.append(
-            f"Latitude {latitude} is out of valid range [-90, +90]"
-        )
+        errors.append(f"Latitude {latitude} is out of valid range [-90, +90]")
 
     if not isinstance(longitude, (int, float)):
         errors.append(f"Longitude is not a number: {longitude!r}")
     elif longitude < -180.0 or longitude > 180.0:
-        errors.append(
-            f"Longitude {longitude} is out of valid range [-180, +180]"
-        )
+        errors.append(f"Longitude {longitude} is out of valid range [-180, +180]")
 
-    if errors:
-        result.errors = errors
-    else:
-        result.valid = True
+    if gps_source == "VISUAL_OVERLAY":
+        warnings.append("EXIF GPS unavailable. Coordinates detected from visible GPS camera overlay.")
+        if confidence == "LOW":
+            warnings.append("Coordinates detected from visible image text. Manual verification recommended.")
+
+    result.errors = errors
+    result.warnings = warnings
+    result.valid = len(errors) == 0
 
     return result

@@ -14,6 +14,7 @@ watershed Development Outcomes.
 
 from __future__ import annotations
 
+import datetime
 import uuid
 from typing import Any, Dict, List, Optional
 
@@ -24,18 +25,30 @@ try:
     from data.demo_data import INTERVENTIONS, WATERSHED_BOUNDARIES, WATERSHEDS
     from services.exif_service import extract_exif
     from services.spatial_service import match_nearest_intervention, match_watershed
-    from services.storage_service import save_upload
+    from services.storage_service import (
+        get_all_evidence,
+        get_evidence_by_id,
+        save_evidence_record,
+        save_upload,
+        update_evidence_verification,
+    )
     from services.validation_service import validate_coordinates
 except ImportError:
     from ..data.demo_data import INTERVENTIONS, WATERSHED_BOUNDARIES, WATERSHEDS
     from ..services.exif_service import extract_exif
     from ..services.spatial_service import match_nearest_intervention, match_watershed
-    from ..services.storage_service import save_upload
+    from ..services.storage_service import (
+        get_all_evidence,
+        get_evidence_by_id,
+        save_evidence_record,
+        save_upload,
+        update_evidence_verification,
+    )
     from ..services.validation_service import validate_coordinates
 
 
 # ---------------------------------------------------------------------------
-# Pydantic response models
+# Pydantic models
 # ---------------------------------------------------------------------------
 
 
@@ -47,6 +60,7 @@ class ImageDimensions(BaseModel):
 class ValidationResponse(BaseModel):
     valid: bool = False
     errors: List[str] = []
+    warnings: List[str] = []
 
 
 class WatershedMatchResponse(BaseModel):
@@ -64,6 +78,13 @@ class InterventionMatchResponse(BaseModel):
     distanceMeters: Optional[float] = None
 
 
+class VerificationResponse(BaseModel):
+    status: str = "requires_verification"
+    verifiedBy: Optional[str] = None
+    verifiedAt: Optional[str] = None
+    reviewNote: Optional[str] = None
+
+
 class EvidenceIngestResponse(BaseModel):
     """Full response from the evidence ingestion pipeline."""
 
@@ -74,15 +95,26 @@ class EvidenceIngestResponse(BaseModel):
     gpsAvailable: bool = False
     latitude: Optional[float] = None
     longitude: Optional[float] = None
+    gpsSource: str = "NONE"
+    gpsConfidence: str = "NONE"
+    gpsStatus: str = "MISSING"
 
     timestampAvailable: bool = False
     captureTimestamp: Optional[str] = None
+    timestampSource: str = "NONE"
+    timestampConfidence: str = "NONE"
 
     imageDimensions: Optional[ImageDimensions] = None
 
     validation: ValidationResponse
     watershedMatch: WatershedMatchResponse
     nearestIntervention: InterventionMatchResponse
+    verification: VerificationResponse = VerificationResponse()
+
+
+class VerificationUpdateRequest(BaseModel):
+    status: str
+    reviewNote: Optional[str] = None
 
 
 # ---------------------------------------------------------------------------
@@ -104,9 +136,10 @@ async def ingest_evidence(image: UploadFile) -> EvidenceIngestResponse:
 
     Accepts a multipart/form-data upload with an ``image`` field.
     Runs the full evidence pipeline: EXIF extraction → validation →
-    watershed matching → intervention matching → storage.
+    watershed matching → intervention matching → storage → registry persistence.
 
     Returns structured JSON with all extracted and matched metadata.
+    All newly ingested evidence starts as 'requires_verification'.
     No data is fabricated — missing EXIF fields are reported honestly.
     """
     # --- 1. Input validation ---
@@ -143,6 +176,8 @@ async def ingest_evidence(image: UploadFile) -> EvidenceIngestResponse:
         latitude=exif_result.latitude,
         longitude=exif_result.longitude,
         gps_available=exif_result.gps_available,
+        gps_source=exif_result.gps_source,
+        confidence=exif_result.gps_confidence,
     )
 
     # --- 4. Watershed Matching ---
@@ -177,12 +212,65 @@ async def ingest_evidence(image: UploadFile) -> EvidenceIngestResponse:
             distanceMeters=iv_result.distance_meters,
         )
 
-    # --- 6. Storage ---
+    # --- 6. Binary Storage ---
     stored_filename = save_upload(image_bytes, original_filename)
 
-    # --- 7. Build Response ---
+    # --- 7. Evidence ID & Registry Persistence ---
     evidence_id = f"ev-upload-{uuid.uuid4().hex[:8]}"
 
+    created_at = datetime.datetime.now(datetime.timezone.utc).isoformat()
+
+    evidence_record: Dict[str, Any] = {
+        "id": evidence_id,
+        "filename": original_filename,
+        "storedFilename": stored_filename,
+        "gpsAvailable": exif_result.gps_available,
+        "latitude": exif_result.latitude,
+        "longitude": exif_result.longitude,
+        "gpsSource": exif_result.gps_source,
+        "gpsConfidence": exif_result.gps_confidence,
+        "gpsStatus": exif_result.gps_status,
+        "gpsRawText": exif_result.gps_raw_text,
+        "timestampAvailable": exif_result.timestamp_available,
+        "captureTimestamp": exif_result.capture_timestamp,
+        "timestampSource": exif_result.timestamp_source,
+        "timestampConfidence": exif_result.timestamp_confidence,
+        "imageDimensions": {
+            "width": exif_result.image_width,
+            "height": exif_result.image_height,
+        },
+        "watershedMatch": {
+            "matched": watershed_match.matched,
+            "watershedId": watershed_match.watershedId,
+            "watershedName": watershed_match.watershedName,
+            "distanceMeters": watershed_match.distanceMeters,
+        },
+        "nearestIntervention": {
+            "matched": intervention_match.matched,
+            "interventionId": intervention_match.interventionId,
+            "code": intervention_match.code,
+            "type": intervention_match.type,
+            "distanceMeters": intervention_match.distanceMeters,
+        },
+        "validation": {
+            "valid": coord_validation.valid,
+            "errors": coord_validation.errors,
+            "warnings": coord_validation.warnings,
+        },
+        "verification": {
+            "status": "requires_verification",
+            "verifiedBy": None,
+            "verifiedAt": None,
+            "reviewNote": None,
+        },
+        "source": "uploaded",
+        "createdAt": created_at,
+    }
+
+    # Persist to local JSON registry
+    save_evidence_record(evidence_record)
+
+    # --- 8. Build Response ---
     return EvidenceIngestResponse(
         evidenceId=evidence_id,
         filename=original_filename,
@@ -190,8 +278,13 @@ async def ingest_evidence(image: UploadFile) -> EvidenceIngestResponse:
         gpsAvailable=exif_result.gps_available,
         latitude=exif_result.latitude,
         longitude=exif_result.longitude,
+        gpsSource=exif_result.gps_source,
+        gpsConfidence=exif_result.gps_confidence,
+        gpsStatus=exif_result.gps_status,
         timestampAvailable=exif_result.timestamp_available,
         captureTimestamp=exif_result.capture_timestamp,
+        timestampSource=exif_result.timestamp_source,
+        timestampConfidence=exif_result.timestamp_confidence,
         imageDimensions=ImageDimensions(
             width=exif_result.image_width,
             height=exif_result.image_height,
@@ -199,7 +292,66 @@ async def ingest_evidence(image: UploadFile) -> EvidenceIngestResponse:
         validation=ValidationResponse(
             valid=coord_validation.valid,
             errors=coord_validation.errors,
+            warnings=coord_validation.warnings,
         ),
         watershedMatch=watershed_match,
         nearestIntervention=intervention_match,
+        verification=VerificationResponse(
+            status="requires_verification",
+            verifiedBy=None,
+            verifiedAt=None,
+            reviewNote=None,
+        ),
     )
+
+
+@router.get("", response_model=List[Dict[str, Any]])
+async def get_evidence_list(watershedId: Optional[str] = None) -> List[Dict[str, Any]]:
+    """Retrieve all persisted field evidence records from the registry.
+
+    Supports optional filtering by watershedId.
+    """
+    return get_all_evidence(watershed_id=watershedId)
+
+
+@router.get("/{evidence_id}", response_model=Dict[str, Any])
+async def get_single_evidence(evidence_id: str) -> Dict[str, Any]:
+    """Retrieve a single persisted evidence record by ID."""
+    record = get_evidence_by_id(evidence_id)
+    if not record:
+        raise HTTPException(status_code=404, detail=f"Evidence with ID '{evidence_id}' not found.")
+    return record
+
+
+@router.patch("/{evidence_id}/verification", response_model=Dict[str, Any])
+async def update_verification(
+    evidence_id: str,
+    request: VerificationUpdateRequest,
+) -> Dict[str, Any]:
+    """Update verification status of an evidence record.
+
+    Allowed status values: 'requires_verification', 'verified', 'rejected'.
+    Only mutates verification metadata without altering spatial, EXIF, or file paths.
+    """
+    allowed_statuses = {"requires_verification", "verified", "rejected"}
+    if request.status not in allowed_statuses:
+        raise HTTPException(
+            status_code=400,
+            detail=f"Invalid verification status: '{request.status}'. Allowed values: {sorted(allowed_statuses)}",
+        )
+
+    updated = update_evidence_verification(
+        evidence_id=evidence_id,
+        status=request.status,
+        review_note=request.reviewNote,
+        verified_by="demo-reviewer",
+    )
+    if not updated:
+        raise HTTPException(
+            status_code=404,
+            detail=f"Evidence with ID '{evidence_id}' not found.",
+        )
+
+    return updated
+
+

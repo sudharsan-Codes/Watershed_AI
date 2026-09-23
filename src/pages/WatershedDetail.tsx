@@ -17,31 +17,31 @@ export default function WatershedDetail() {
 
   if (!watershed) {
     return (
-      <div className="p-6 text-sm text-gray-500">
+      <div className="p-6 text-sm text-gis-text-muted">
         Watershed not found. It may have been removed or the ID is incorrect.
       </div>
     );
   }
 
   return (
-    <div className="flex flex-col h-full">
-      <div className="shrink-0 bg-white border-b border-gray-200 px-5 pt-4">
-        <div className="text-[11px] text-gray-400 font-medium tracking-wide mb-1">
+    <div className="flex flex-col h-full bg-gis-bg">
+      <div className="shrink-0 bg-gis-surface border-b border-gis-border px-5 pt-4">
+        <div className="text-[11px] text-gis-text-dim font-medium tracking-wide mb-1">
           <span className="uppercase">Watersheds</span>
           <span className="mx-1.5">/</span>
-          <span className="uppercase text-gray-500">{watershed.name}</span>
+          <span className="uppercase text-gis-text-muted">{watershed.name}</span>
         </div>
 
         <div className="flex items-start justify-between gap-4 flex-wrap">
           <div>
-            <h1 className="text-xl font-semibold text-gray-900">{watershed.name}</h1>
-            <div className="flex items-center gap-4 mt-1.5 text-xs text-gray-500">
+            <h1 className="text-xl font-bold text-gis-text">{watershed.name}</h1>
+            <div className="flex items-center gap-4 mt-1.5 text-xs text-gis-text-muted">
               <span className="flex items-center gap-1">
-                <MapPin size={12} />
+                <MapPin size={12} className="text-brand-400" />
                 {watershed.district}, {watershed.state}
               </span>
               <span className="flex items-center gap-1">
-                <Ruler size={12} />
+                <Ruler size={12} className="text-gis-text-dim" />
                 {watershed.areaHectares.toLocaleString("en-IN")} ha
               </span>
               <Badge tone="success">Under Monitoring</Badge>
@@ -50,7 +50,7 @@ export default function WatershedDetail() {
 
           <div className="flex items-center gap-2">
             <select
-              className="text-xs border border-gray-200 rounded-md px-2.5 py-1.5 text-gray-600 bg-white outline-none"
+              className="text-xs border border-gis-border rounded-md px-2.5 py-1.5 text-gis-text bg-gis-card outline-none focus:border-brand-500 transition-colors"
               defaultValue="12m"
               aria-label="Reporting period"
             >
@@ -58,10 +58,13 @@ export default function WatershedDetail() {
               <option value="6m">Period: Last 6 Months</option>
               <option value="30d">Period: Last 30 Days</option>
             </select>
-            <button className="flex items-center gap-1.5 text-xs font-medium border border-gray-200 rounded-md px-3 py-1.5 text-gray-700 hover:bg-gray-50 transition-colors">
-              <FileText size={13} />
+            <NavLink
+              to="/reports"
+              className="flex items-center gap-1.5 text-xs font-semibold border border-gis-border rounded-md px-3 py-1.5 text-gis-text bg-gis-card hover:bg-gis-border/50 hover:border-gis-border-light transition-colors"
+            >
+              <FileText size={13} className="text-brand-400" />
               Generate Report
-            </button>
+            </NavLink>
           </div>
         </div>
 
@@ -73,10 +76,10 @@ export default function WatershedDetail() {
               end={tab.to === ""}
               className={({ isActive }) =>
                 [
-                  "text-xs font-semibold uppercase tracking-wide pb-2.5 border-b-2 transition-colors",
+                  "text-xs font-bold uppercase tracking-wider pb-2.5 border-b-2 transition-colors",
                   isActive
-                    ? "text-brand-600 border-brand-600"
-                    : "text-gray-400 border-transparent hover:text-gray-600",
+                    ? "text-brand-400 border-brand-500"
+                    : "text-gis-text-dim border-transparent hover:text-gis-text-muted",
                 ].join(" ")
               }
             >
@@ -86,7 +89,7 @@ export default function WatershedDetail() {
         </div>
       </div>
 
-      <div className="flex-1 min-h-0 overflow-auto bg-slate-25">
+      <div className="flex-1 min-h-0 overflow-auto bg-gis-bg">
         <Outlet context={{ watershed }} />
       </div>
     </div>
